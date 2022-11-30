@@ -1,29 +1,32 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 main {
   display: flex;
+  padding: 2.5rem 1.5rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
-header {
-  min-width: 100vh;
-  margin: 0;
-  margin-top: 4%;
+.header {
+  min-width: 100%;
+  max-width: 50rem;
+  margin-bottom: 4%;
 }
 
-.nav__bar {
-  width: 100%;
-  min-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav__logo {
-  width: 100%;
+  width: 10%;
 }
 
 ul {
@@ -31,16 +34,66 @@ ul {
   display: inline;
   list-style: none;
   align-items: center;
+  text-align: center;
 }
 ul li, ul a {
   text-decoration: none;
   display: inline-block;
+  justify-content: space-evenly;
+  margin: 0.5em;
+  color: hsl(236deg, 13%, 42%);
+}
+ul li a:hover, ul a a:hover {
+  color: hsl(35deg, 77%, 62%);
+  transition: 0.2s;
 }
 
 .top-left {
-  width: 80%;
-  margin: auto;
+  padding: 0;
+  margin: 0;
 }
 .top-left img {
-  width: 60%;
+  width: 70%;
+}
+
+.div-left {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.div-left h1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: hsl(240deg, 100%, 5%);
+}
+
+.div-left-title {
+  flex: 1;
+  width: 50%;
+  text-align: start;
+  margin-right: 1em;
+}
+
+.div-left-para {
+  width: 50%;
+  line-height: 2em;
+}
+
+.div-left-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  background-color: red;
+}
+
+/* Right section */
+.top-right {
+  flex: 1;
+  background-color: red;
+  width: 28%;
 }/*# sourceMappingURL=styles.css.map */
