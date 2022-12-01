@@ -101,7 +101,7 @@ ul li a:hover, ul a a:hover {
 }
 
 /* Right section */
-.card-preview-2 {
+.top-right {
   float: right;
   background-color: red;
   width: 20%;

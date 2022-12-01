@@ -89,6 +89,7 @@ margin:0;
 }
 
 .div-left-title{
+   
     width: 50%;
     text-align: start;
     margin-right: 1em;
@@ -104,18 +105,16 @@ margin:0;
     margin-left: auto;
     margin-right: auto;
     border-style: none;
-    background-color: red;   
+    background-color: red;
+    
 }
 
 /* Right section */
 
-.card-preview-2{
+
+.top-right{
     float: right;
     background-color: red;
     width: 20%;
     padding: 0;
-}
-
-.top-right{
-   
 }
