@@ -55,12 +55,70 @@ main{
 .nav-links{
     display: none;
 }
+
+.hamburger-menu{
+    cursor: pointer;
+}
+
+//js component for .shown
+.nav-links.shown {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 2rem;
+    
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 0;
+    padding-bottom: 100%;
+    background-color: $white;
+    width: 60%;
+    top: 0%;
+    left: 70%;
+    transform: translate(-50%, 0%);
+   li{
+    list-style: none;
+    text-align: start;
+    margin-left: 3rem;
+   }
+   a{
+    color: $darkblue;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover{
+        background-color: $red;
+        transition: .4s;
+        color: $white;
+    }
+   }
+   img{
+    width: 10%;
+    max-width: 25px;
+    transform: scale(1.8);
+    align-self: end;
+    margin-right: 3rem;
+   }
+}   
+
+    .nav-links.shown::after {
+    content: "";
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100vh;
+    height: 100vh;
+    transform: translate(-110%, -80%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 100vh;
+    padding-bottom: 100vh;
+    margin-left: 6vh;
+} 
+//end js .shown section
 //Nav-bar END
 /////////////
 
 /////////////
 //card-banner-title section begin
-
 .card-banner-title{
     display: flex;
     flex-direction: column;
@@ -118,6 +176,8 @@ main{
 /////////////
 /// .card-black-box BEGIN
 .card-black-box{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: $darkblue;
     article{
         margin: 1rem;
@@ -150,9 +210,9 @@ main{
         border-top: 1px solid $gray;
     }
 }
-
+//END card-black-box
 ////////
-/// .previews START
+/// .previews BEGIN
 .previews{
     display: flex;
     justify-content: center;
@@ -192,14 +252,15 @@ section{
     font-size: 1.5rem;
    }
    p{
-  
     line-height: 2rem;
    }
    h5:hover{
     color: $red;
     transition: .4s;
+    }
 }
-}
+//////END .previews
+/////////
 
 
 
