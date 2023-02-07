@@ -12,12 +12,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@300;400;700;800&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Outfit:wght@300;400;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 <main>
+
   <header class="header">
-    <nav class="nav">   
-      <img class="nav__logo" id="logo" src="assets/images/logo.svg" alt="logo">
-        <ul class="nav__links">
+      <img class="logo" id="logo" src="assets/images/logo.svg" alt="logo">
+      
+      <nav class="nav">
+        <img class="hamburger-menu" src="assets/images/icon-menu.svg" alt="icon-menu" srcset="">
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
@@ -26,68 +30,99 @@
         </ul> 
     </nav> 
   </header>
+  
+  <!-- GROUP 1: Banner, title, button -->
+  <div class="card-banner-title">
+          <img class="banner" src="assets/images/image-web-3-mobile.jpg" alt="" srcset="">
+  
+          <h1 class="title">The Bright Future of Web 3.0?</h1>
+          <p class="para-1">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
 
-<div class="card">
-  <section class="card-preview">
-          <!-- left section preview articles + image -->
-        <div class="top-left">
-            <img src="assets/images/image-web-3-desktop.jpg" alt="">
-        </div>
-        
-        <div class="div-left">
-            
-            <h1 class="div-left-title">The Bright Future of Web 3.0?</h1>
+          <a class="card-banner-title-button" 
+            alt="click for article">
+            Read more
+          </a>
+  </div>
 
-            <article class="div-left-para">
-              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-              But is it really fulfilling its promise?
-              <button class="div-left-button">Read more</button>
-            </article>
-
-        </div>
- 
-        <!--right section, black box articles-->
-     
-        <div class="top-right">
-            <h2>New</h2> 
-            
+  <!--GROUP 2: card-black-box headline-->
+  <div class="card-black-box">
+    <article>
+      <h2 class="new card-title">New</h2> 
+        <div class="headline story-1">
+          <a class="headline-link" href="#">
             <h3>Hydrogen VS Electric Cars</h3>
+          </a>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          
+        </div>
+    <hr>
+        <div class="headline story-2">
+          <a class="headline-link-2" href="#">
             <h3>The Downsides of AI Artistry</h3>
+          </a>
             <p>What are the possible adverse effects of on-demand AI image generation?</p>
-          
+        </div>
+    <hr>
+        <div class="headline story-3">
+          <a class="headline-link-3" href="#">
             <h3>Is VC Funding Drying Up?</h3>
+          </a>
             <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
-    </section>
+    </article>
   </div>
+ 
+  <!--GROUP 3: Previews and Articles section-->
+  
+  <div class="previews">
+    <article class="preview-1 preview-story">
+        <img src="assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs Article" srcset="">
+        
+        <section class="preview-right">
+          <h4>01</h4>
+            <a href="#">
+              <h5>Reviving Retro PCs</h5>
+            </a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </section>
+    </article>
 
-<!--Previews with pictures-->
+    <article class="preview-2 preview-story">
+        <img src="assets/images/image-top-laptops.jpg" alt="Top 10 laptops of 2022 article" srcset="">
+        
+        <section class="preview-right">
+          <h4>02</h4>
+            <a href="#">
+              <h5>Top 10 Laptops of 2022</h5>
+            </a>
+          <p>Our best picks for various needs and budgets.</p>
+        </section>
+    </article>
+   
+    <article class="preview-3 preview-story">
+        <img src="assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming article" srcset="">
+        
+        <section class="preview-right">
+          <h4>03</h4>
+            <a href="#">
+              <h5>The Growth of Gaming</h5>
+            </a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </section>
+      </article>
+  </div>
+     
 
-<!---
-<div class="part-2">
-  <article class="preview-1">
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-  </article>
-  <article class="preview-2">
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-  </article>
-  <article class="preview-3">
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  </article>
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">littleDragonShrimp</a>.
   </div>
 </div>
--->
+
 </main>
 </body>
 </html>
